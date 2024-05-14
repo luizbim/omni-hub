@@ -1,8 +1,10 @@
 # Luiz Bim - Omni Hub
 
+# Luiz Bim - Omni Hub
+
 <p align="center">
-    <a alt="Luiz Bim" href="https://luizbim.dev" target="_blank">
-        <img src="./assets/images/LB.svg" width="150" style="border-radius: 50%">
+    <a href="luizbim.dev" title="Luiz Bim">
+        <img src="./assets/images/LB.svg" width="150" alt="Luiz Bim">
     </a>
 </p>
 
