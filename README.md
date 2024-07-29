@@ -2,7 +2,7 @@
 
 <p align="center">
     <a href="https://luizbim.dev" title="Luiz Bim">
-        <img src="./assets/images/lb-logo-transparent.svg" width="300" alt="Luiz Bim" style="border-radius:50%">
+        <img src="./assets/images/LB-Omni.svg" width="300" alt="Luiz Bim" style="border-radius:50%">
     </a>
 </p>
 
