@@ -1,9 +1,0 @@
-{
-  "generators": {
-    "Create NestJS Microservice": {
-      "factory": "./src/generators/generator",
-      "schema": "./src/generators/schema.json",
-      "description": "Generate a new microservice with all the basic configurations needed to be implemented and deployed"
-    }
-  }
-}
