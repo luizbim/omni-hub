@@ -8,14 +8,14 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
+    "target": "es2023",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": ["es2023", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@luiz-bim/project-setup": ["packages/project-setup/src/index.ts"]
+      "@omni-hub/utilities": ["packages/utilities/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
