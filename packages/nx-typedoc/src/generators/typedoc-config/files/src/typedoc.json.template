@@ -1,0 +1,9 @@
+{
+  "extends": ["typedoc/tsdoc.json"],
+  "typedocOptions": {
+    "entryPoints": ["<% PROJECT_ROOT %>/src/index.ts"],
+    "exclude": ["**/*.spec.ts"],
+    "out": "/docs/<% PROJECT_NAME %>/",
+    "tsconfig": "<% PROJECT_ROOT %>/tsconfig.doc.json",
+  }
+}

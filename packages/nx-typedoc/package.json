@@ -1,0 +1,36 @@
+{
+  "name": "@omni-hub/nx-typedoc",
+  "version": "1.0.0",
+  "description": "Integration between NX and Typedoc, allowing NX projects to generate documentation using Typedoc.",
+  "license": "MIT",
+  "author": {
+    "name": "Luiz Bim"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luizbim/omni-hub.git"
+  },
+  "private": false,
+  "keywords": [
+    "typedoc",
+    "nx",
+    "monorepo",
+    "documentation",
+    "automation",
+    "typescript",
+    "nx-plugin"
+  ],
+  "peerDependencies": {
+    "typedoc": "^0.26.5",
+    "typedoc-plugin-rename-defaults": "^0.7.1",
+    "typedoc-theme-hierarchy": "^5.0.3"
+  },
+  "dependencies": {
+    "@nx/devkit": "19.0.3",
+    "tslib": "^2.3.0"
+  },
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+  "generators": "./generators.json"
+}

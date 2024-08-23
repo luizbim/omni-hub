@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "TypeDoc Project Config": {
+      "factory": "./src/generators/typedoc-config/generator",
+      "schema": "./src/generators/typedoc-config/schema.json",
+      "description": "This will add the proper Typedoc configs to an existing project."
+    }
+  }
+}

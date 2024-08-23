@@ -1,0 +1,64 @@
+{
+  "name": "NX TypeDoc",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/nx-typedoc/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": ["typedoc", "omni-hub", "integration", "nx-plugin"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/nx-typedoc",
+        "main": "packages/nx-typedoc/src/index.ts",
+        "tsConfig": "packages/nx-typedoc/tsconfig.lib.json",
+        "assets": [
+          "packages/nx-typedoc/*.md",
+          {
+            "input": "./packages/nx-typedoc/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/nx-typedoc/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/nx-typedoc",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./packages/nx-typedoc",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/nx-typedoc/jest.config.ts"
+      }
+    }
+  }
+}
